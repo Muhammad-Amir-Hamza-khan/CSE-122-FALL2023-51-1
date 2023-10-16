@@ -1,0 +1,30 @@
+#include<stdio.h>
+#include<string.h>
+main()
+{
+
+    char s[1000];
+    gets(s);
+    char a[1000];
+    gets(a);
+    strrev(s);
+      /* int r=strcmp(s1,s2);
+   if(r==0){
+       printf("equal");
+   }
+   else if(r>0){
+       printf("first string greater");
+   }
+   else{
+       printf("second string greater");
+   }*/
+
+    int d=strcmp(s,a);
+    if(d==0){
+        printf("YES");
+    }
+    else{
+        printf("NO");
+    }
+
+}
