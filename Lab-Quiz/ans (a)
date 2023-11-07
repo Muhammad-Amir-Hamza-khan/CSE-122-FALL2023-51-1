@@ -1,0 +1,81 @@
+#include <bits/stdc++.h>
+#include <map>
+#include <algorithm>
+#include <vector>
+#include <map>
+#include <string>
+using namespace std;
+class array1
+{
+
+public:
+    int a[100];
+    char b[100];
+    float c[100];
+    int k=0;
+    int m=0;
+    int n=0;
+
+    void insert1(int index, int value)
+    {
+
+        for(int i=0;i<index;i++){
+            a[i]=value;
+            k++;
+        }
+    }
+
+    void insert1(int index,char value)
+    {
+
+        for(int i=0;i<index;i++){
+            b[i]=value;
+            m++;
+        }
+    }
+
+    void insert1(int index,float value)
+    {
+
+        for(int i=0;i<index;i++){
+            c[i]=value;
+            n++;
+        }
+    }
+
+    void output()
+    {
+        for(int i=0;i<k;i++){
+            cout<<a[i]<<" ";
+        }
+        cout<<endl;
+    }
+    void output1()
+    {
+        for(int i=0;i<m;i++){
+            cout<<b[i]<<" ";
+        }
+        cout<<endl;
+    }
+    void output2()
+    {
+        for(int i=0;i<n;i++){
+            cout<<c[i]<<" ";
+        }
+        cout<<endl;
+    }
+
+};
+int main()
+{
+    array1 obj;
+    obj.insert1(10, 50);
+    obj.insert1(10, 'D');
+    obj.insert1(10, 4.56f);
+
+    obj.output();
+    obj.output1();
+    obj.output2();
+
+
+}
