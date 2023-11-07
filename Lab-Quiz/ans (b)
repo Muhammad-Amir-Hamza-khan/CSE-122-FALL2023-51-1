@@ -1,0 +1,31 @@
+#include <bits/stdc++.h>
+#include <map>
+#include <algorithm>
+#include <vector>
+#include <map>
+#include <string>
+using namespace std;
+
+template <class t>
+class hamza {
+public:
+    t Value( t val1,  t val2, t val3) {
+        return (val1 > val2) ? ((val1 > val3) ? val1 : val3) : ((val2 > val3) ? val2 : val3);
+    }
+};
+
+int main() {
+    hamza<int> a;
+    int greatestint = a.Value(10, 15, 8);
+    cout << greatestint << endl;
+
+    hamza<char> b;
+    char greatestchar = b.Value('A', 'C', 'B');
+    cout<< greatestchar << endl;
+
+    hamza<float> c;
+    float greatestfloat = c.Value(5.5, 7.7, 6.2);
+    cout << greatestfloat << endl;
+
+    return 0;
+}
